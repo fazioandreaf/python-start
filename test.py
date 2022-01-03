@@ -1,17 +1,32 @@
-# print('the average is: ', (2+3)/5)
-# age = 10
-# print('My age is: ', age)
-# x = 9
-# y = 2323
-# print('the number are: ', x, '-', y)
-# number1 = input('Please eter the firt number: ')
-# number2 = input('Please eter the second number: ')
-# # concat
-# print(int(number1+number2))
-# # convertation
-# print(int(number1)+int(number2))
+# # return the initials
+# name = str(input('Your name: '))
+# middleName = str(input('Your middleName: '))
+# lastname = str(input('Your lastname: '))
+# print(name[0]+middleName[0]+'. '+lastname[0])
 
-# Km to miles Converter
-km = input('Please your kms: ')
-miles = round(float(km) * float(0.621371),3)
-print(miles, " miles")
+# import math
+# radius = float(input('Write the radius: '))
+# circumference = math.ceil(math.pi * radius * 2)
+# area = math.ceil(math.pi * radius ** 2)
+# print('The circumference: ', circumference, 'm')
+# print('The area: ', area, 'm^2')
+
+# # Give the name month's of his birthday
+# month= str(input('Write your birthday in this format DD-MM-YY: '))
+# months= ('Gen', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec')
+# index= int((month[3:5]))-1
+# print(months[index])
+
+# # Get information from a dictionary person
+# person = {'name': 'Andrea', 'gender': 'male', 'age': 28, 'address': 'Gravina di Catania' }
+# key = str(input('What information do you want to know about the person? ')).lower()
+# print(person.get(key, 'That information is not avaible'))
+
+my_age = 28
+user_age = int(input('Type your age: '))
+if (user_age > my_age):
+    print("Yo're older than me")
+elif (user_age < my_age):
+    print("I'm older than you")
+else:
+    print('We are the same age')
