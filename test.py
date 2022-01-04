@@ -1,39 +1,21 @@
-# weight = float(input('Type your weight in Kg: '))
-# height = float(input('Type your height in m: '))
+# # Time
+# import time as t
 
-# bmi = weight / height **2
+# time_now=t.localtime()
+# print(time_now.tm_hour)
+# print(t.time())
+# t.sleep(5)
+# print(t.localtime())
 
-# classification = 'Obesity'
+import matplotlib.pyplot as plt
 
-# if (bmi <= 18.5) :
-#     classification = 'Underweight'
-# elif ( bmi > 18.5 and bmi <= 24.9) :
-#     classification = 'Normal weight'
-# elif ( bmi > 24.9 and bmi <= 29.9) :
-#     classification = 'Overweight'
+x = [1, 2, 3, 4]
+y = [95656, 43234, 324324, 324243]
 
-# print("Yo're ", classification, ' and bmi are: ', bmi)
-
-# # Error Handling
-
-# number = input('Type a number')
-
-# try:
-#     number = float(number)
-#     print('the number is : ', number)
-# except:
-#     print('Invalid number')
-
-
-# Function
-def say_hello(person1, person2='the director'):
-    print('Hello', person1, "I'm your", person2)
-
-say_hello("Jane!")
-
-def fahr2celsius(fahr):
-    celsius = (5 * (fahr - 32)) / 9
-    return celsius
-
-print('Celsius: ', round(fahr2celsius(100)), '°')
-print('Kelvin: ', round(fahr2celsius(100) + 273.5), 'K')
+plt.plot(x, y)
+legend = ['Jan', 'Feb', 'Mar', 'Apr']
+plt.xticks(x, legend)
+plt.bar(x, y)
+plt.ylabel('Sales')
+plt.xlabel('Months')
+plt.show()
